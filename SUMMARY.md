@@ -9,3 +9,5 @@
 ## CURSO BÁSICO
 
 * [Tema 1. Python Básico](curso-basico/tema-1.-python-basico.md)
+* [Tema 2. Números en Python](curso-basico/tema-2.-numeros-en-python.md)
+* [Tema 3. Strings en Python](curso-basico/tema-3.-strings-en-python.md)
