@@ -21,3 +21,4 @@
 ## CURSO AVANZADO
 
 * [Tema 10. Funciones](curso-avanzado/tema-10.-funciones.md)
+* [Tema 11. Funciones Lambda](curso-avanzado/tema-11.-funciones-lambda.md)
