@@ -609,7 +609,7 @@ En matemáticas, las matrices se definen del siguiente modo.
 
 **Matriz.** Una matriz de dimensiones **m x n** es una tabla formada por elementos dispuestos en **m** filas y **n** columnas de la forma:
 
-![matriz](<../.gitbook/assets/image (2).png>)
+![matriz](<../.gitbook/assets/image (2) (1).png>)
 
 Los elementos de la matriz se representan con doble subíndice, ![a\_{{ij}}\\,\\!](https://wikimedia.org/api/rest\_v1/media/math/render/svg/1bc7b5afea6063989ec3cfc8c831f3f38035cf58)donde el primero indica la fila a la que pertenece y, el segundo, la columna.
 
@@ -721,7 +721,7 @@ for row in matrix:
 
 Para poder sumar dos matrices, necesitamos que tengan la misma dimensión. Entonces, dadas **A** y **B** dos matrices con dimensión **m x n** , su suma será una matriz de dimensión **m x n** y sus elementos se obtienen del siguiente modo:
 
-![suma de matrices](<../.gitbook/assets/image (1).png>)
+![suma de matrices](<../.gitbook/assets/image (1) (1).png>)
 
 Dadas dos matrices con la misma dimensión, las podemos usar haciendo uso de bucles `for` anidados.
 
