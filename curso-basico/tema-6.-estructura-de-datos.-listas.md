@@ -10,8 +10,8 @@ La primera estructura de datos que veremos son las **listas**. Éstas son un con
 
 Las listas son:
 
-* hetereogéneas: los elementos pueden ser de distinto tipo en una misma lista
-* mutables: los elementos pueden ser modificados
+* **hetereogéneas**: los elementos pueden ser de distinto tipo en una misma lista
+* **mutables**: los elementos pueden ser modificados
 
 Un ejemplo de lista sería
 

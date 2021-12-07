@@ -16,3 +16,4 @@
 * [Tema 6. Estructura de Datos. Listas](curso-basico/tema-6.-estructura-de-datos.-listas.md)
 * [Tema 7. Estructura de Datos. Diccionarios](curso-basico/tema-7.-estructura-de-datos.-diccionarios.md)
 * [Tema 8. Estructura de Datos. Conjuntos](curso-basico/tema-8.-estructura-de-datos.-conjuntos.md)
+* [Tema 9. Estructura de Datos. Tuplas](curso-basico/tema-9.-estructura-de-datos.-tuplas.md)

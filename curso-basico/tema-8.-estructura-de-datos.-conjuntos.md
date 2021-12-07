@@ -10,8 +10,8 @@ Ahora, es el turno de los **conjuntos**. Éstos son una estructura sin orden que
 
 Los conjuntos son:
 
-* hetereogéneos: los elementos pueden ser de distinto tipo en un mismo conjunto
-* no mutables: los elementos no pueden ser modifcados una vez el conjunto ha sido creado
+* **hetereogéneos**: los elementos pueden ser de distinto tipo en un mismo conjunto
+* **no** **mutables**: los elementos no pueden ser modifcados una vez el conjunto ha sido creado
 
 Los conjuntos pueden construirse con la función `set()` o directamente entre llaves, `{}`.
 
