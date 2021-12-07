@@ -12,3 +12,4 @@
 * [Tema 2. Números en Python](curso-basico/tema-2.-numeros-en-python.md)
 * [Tema 3. Strings en Python](curso-basico/tema-3.-strings-en-python.md)
 * [Tema 4. Variables Booleanas y Operadores de Decisión](curso-basico/tema-4.-variables-booleanas-y-operadores-de-decision.md)
+* [Tema 5. Operadores de Iteración](curso-basico/tema-5.-operadores-de-iteracion.md)

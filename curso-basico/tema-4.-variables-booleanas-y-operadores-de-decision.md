@@ -1,5 +1,7 @@
 ---
-description: Explicación del uso de Variables Booleanas y Decisiones en Python 3
+description: >-
+  Explicación del uso de Variables Booleanas y Operadores de Decisión en Python
+  3.
 ---
 
 # Tema 4. Variables Booleanas y Operadores de Decisión
