@@ -14,3 +14,4 @@
 * [Tema 4. Variables Booleanas y Operadores de Decisión](curso-basico/tema-4.-variables-booleanas-y-operadores-de-decision.md)
 * [Tema 5. Operadores de Iteración](curso-basico/tema-5.-operadores-de-iteracion.md)
 * [Tema 6. Estructura de Datos. Listas](curso-basico/tema-6.-estructura-de-datos.-listas.md)
+* [Tema 7. Estructura de Datos. Diccionarios](curso-basico/tema-7.-estructura-de-datos.-diccionarios.md)
