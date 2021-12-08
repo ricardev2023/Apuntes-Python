@@ -23,3 +23,4 @@
 * [Tema 10. Funciones](curso-avanzado/tema-10.-funciones.md)
 * [Tema 11. Funciones Lambda](curso-avanzado/tema-11.-funciones-lambda.md)
 * [Tema 12. Programación orientada a objetos](curso-avanzado/tema-12.-programacion-orientada-a-objetos.md)
+* [Tema 13. Scripts y Módulos](curso-avanzado/tema-13.-scripts-y-modulos.md)
