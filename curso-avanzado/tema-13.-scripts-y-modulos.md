@@ -159,7 +159,7 @@ Este módulo tiene 3 funciones:
 
 * `pwn` para trabajar en la escritura de exploits.
 * `pycryptodome` para trabajar con criptografía a bajo nivel.
-* `os` para interacción entre el interprete y el sistema.
+* `sys` para interacción entre el interprete y el sistema.
 * `socket` para trabajar con redes.
 
 ¡Y muchos más!

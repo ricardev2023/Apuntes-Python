@@ -25,3 +25,4 @@
 * [Tema 12. Programación orientada a objetos](curso-avanzado/tema-12.-programacion-orientada-a-objetos.md)
 * [Tema 13. Scripts y Módulos](curso-avanzado/tema-13.-scripts-y-modulos.md)
 * [Tema 14. Archivos TXT y CSV](curso-avanzado/tema-14.-archivos-txt-y-csv.md)
+* [Tema 15. Errores y Excepciones](curso-avanzado/tema-15.-errores-y-excepciones.md)
