@@ -224,6 +224,8 @@ s3 * 2
 'Había una vez un barquito chiquititoHabía una vez un barquito chiquitito'
 ```
 
+## Funciones básicas
+
 ### La función `print()`
 
 Hasta ahora, cada vez que mostrábamos strings por pantalla, estos salían entre comillas simples.
@@ -341,6 +343,8 @@ print("Mi hermana se llama " + nombre + " y su edad es " + str(edad))
 Mi hermana se llama María y su edad es 22
 ```
 
+## Formateo de Strings
+
 ### El método `.format()`
 
 Existe otra forma de concatenar strings y variables de cualquier tipo dentro de un `print()` y es gracias al método `.format()`.
@@ -355,6 +359,31 @@ print("Mi abuelo se llama {} y tiene {} gatos".format(nombre, numero_gatos))
 #RESPUESTA
 Mi abuelo se llama Ricardo y tiene 3 gatos
 ```
+
+### Interpolación de cadenas
+
+Otra forma de formatear las cadenas es utilizando el **operador de porcentaje** `%`. Éste operador se denomina operador de formato de cadena o de interpolación.
+
+Ésta forma de trabajar con texto se conoce tambien como formato de estilo C, ya que se originó en dicho lenguaje de programación. Tambien se puede ver como formato posicional simple.&#x20;
+
+El operador le dice al intérprete de Python que formatee una cadena usando un conjunto dado de variables, encerradas en una tupla, siguiendo al operador.
+
+```
+'%s dice que tu puntuación es de %d puntos' % ("Raúl", 100)
+```
+
+El intérprete de Python sustituye la primera aparición de `%s` en la cadena por la cadena dada "Raúl", y el segundo `%d` por el número "100".  Los porcentajes en la cadena son en realidad marcadores de posición en nuestra cadena de «plantilla» e indican que las cadenas se colocarán allí.
+
+| Marcador |                      Tipo de dato                      |
+| :------: | :----------------------------------------------------: |
+|    %c    |                        carácter                        |
+|    %s    |                         string                         |
+|  %i  %d  |                entero decimal con signo                |
+|    %u    |                entero decimal sin signo                |
+|    %o    |                      entero octal                      |
+|    %x    |            hexadecimal con letras minúsculas           |
+|    %X    |            hexadecimal con letras mayúsculas           |
+|    %f    | numero real de coma flotante (%.2f para dos decimales) |
 
 ## Saltos de línea y tabulaciones
 
