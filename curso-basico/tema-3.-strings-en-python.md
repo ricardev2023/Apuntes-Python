@@ -360,6 +360,55 @@ print("Mi abuelo se llama {} y tiene {} gatos".format(nombre, numero_gatos))
 Mi abuelo se llama Ricardo y tiene 3 gatos
 ```
 
+### Formated Strings o f-strings
+
+Otra forma de formatear nuestras strings en añadir una **`f`** o **`F`** justo antes de nuestra string. Así podemos utilizar las llaves, `{}`, dentro de nuestro string sin necesidad de llamar al método `.format`.
+
+```python
+nombre = "Ricardo"
+numero_gatos = 3
+print(f"Mi abuelo se llama {nombre} y tiene {numero_gatos} gatos"
+
+#RESPUESTA
+Mi abuelo se llama Ricardo y tiene 3 gatos
+```
+
+Utilizando este sistema además podemos utilizar de manera muy sencilla los `operadores de formateo` (que veremos a continuación). Solamente necesitamos poner `:` y a continuación el operador que queramos utilizar.
+
+De la misma manera, si queremos utilizar una variable dentro de otra, por ejemplo como `operador de formateo` o como `método`, solo tenemos que colocarla entre `{}` dentro del anterior.
+
+```python
+width = 10
+precision = 4
+value = decimal.Decimal("12.34567")
+f"result: {value:{width}.{precision}}"
+
+#RESPUESTA
+result:      12.35
+```
+
+Se puede especificar  el símbolo `=`, de tal manera que al utilizarlo veremos el nombre de la variable y su contenido.
+
+Por último, para especificar una conversión podemos utilizar el operador `!`. De esta manera podemos obtener varios resultados:
+
+* `!s`: convierte el contenido de una variable a string. Es igual que `str()`.
+* !`r`: muestra una representación imprimible de un objeto. Es igual que `repr()`.
+* `!a`: convierte el contenido de una variable a ascii. Es igual que `ascci()`.&#x20;
+
+```python
+line = "The mill's closed"
+
+>>> f"{line = }"
+'line = "The mill\'s closed"' # = Para ver variable y contenido
+
+>>> f"{line = :20}"
+"line = The mill's closed   " # : Para formatear el resultado.
+
+>>> f"{line = !r:20}"
+'line = "The mill\'s closed"  # ! Para convertir el resultado con repr().
+
+```
+
 ### Interpolación de cadenas
 
 Otra forma de formatear las cadenas es utilizando el **operador de porcentaje** `%`. Éste operador se denomina operador de formato de cadena o de interpolación.
@@ -384,6 +433,124 @@ El intérprete de Python sustituye la primera aparición de `%s` en la cadena po
 |    %x    |            hexadecimal con letras minúsculas           |
 |    %X    |            hexadecimal con letras mayúsculas           |
 |    %f    | numero real de coma flotante (%.2f para dos decimales) |
+
+{% hint style="warning" %}
+Utilizando la Interpolación de cadenas no se pueden utilizar los operadores de formateo que se exponen a continuación.
+
+Sin embargo, existe una forma propia de formatear dichas cadenas.
+{% endhint %}
+
+### Operadores de Formateo
+
+Los operadores de formateo se utilizan entre las llaves, `{}`, de una `f-string` para formatear la prestación de los valores.  Tambien se pueden pasar directamente al método `format()`.
+
+Se pueden dividir de la siguiente manera (según el manual oficial de Python):
+
+```python
+format_spec     ::=  [[fill]align][sign][#][width][grouping_option][.precision][type]
+fill            ::=  <any character>
+align           ::=  "<" | ">" | "=" | "^"
+sign            ::=  "+" | "-" | " "
+width           ::=  digit+
+grouping_option ::=  "_" | ","
+precision       ::=  digit+
+type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" | "o" | "s" | "x" | "X" | "%"
+```
+
+#### fill
+
+#### align
+
+Indicando el operador necesario podremos alinear el string donde queramos:
+
+* `<`: Alineación a la izquierda.
+* `^`: Alineación al centro.
+* `>`: Alineación a la derecha. Por defecto.
+* `=`: Alineación espaciando el signo (si lo hay) del resultado. Solo valido para numerales.
+
+```python
+num = 5
+print(f"El número es el {num :<10}")
+>>> "El número es el 5"
+num = 5
+print(f"El número es el {num :^10}")
+>>> "El número es el     5    "
+num = 5
+print(f"El número es el {num :>10}")
+>>>"El número es el          5"
+num = -5
+print(f"El número es el {num :=10}")
+>>>"El número es el -        5" #Es dificil pensar en como usarlo
+```
+
+#### sign
+
+Solo válida para numerales y puede ser:
+
+* `+`: Utilizar signo en ambos, positivos y negativos.
+* `-`: Utilizar signo solamente en negativos.
+* `space`:Utilizar signo  en los negativos y un espacio en los positivos.
+
+#### \#
+
+Convierte el contenido de la variable a la forma alterna. Solo válido para `integer`, `float` y `complex`.
+
+En el caso de variable tipo `integer`, cuando el output es **binario, octal o hexadecimal** añade a la salida el prefijo `0b`, `0o` o `0x` respectivamente.
+
+En el caso de variables tipo `float` o `complex`, añade la **coma decimal** al output aunque no sea necesaria.
+
+#### width
+
+Indicando un número podemos hacer que la salida ocupe como mínimo esa cantidad de espacios.
+
+```python
+num = 5
+print(f"el número es {num:10}")
+
+#RESPUESTA
+El número es el          5 #El resultado está alineado a la derecha por defecto
+```
+
+#### grouping\_option
+
+Permite cambiar el cáracter que se utilizamos como separador. Puede ser:
+
+* `,`: Utiliza la coma para separar los miles.
+* `_`: Utiliza la barra baja para separar los miles.
+
+```python
+num = 5000000000
+print(f"El número es el {num}")
+>>>El número es el 5000000000
+
+num = 5000000000
+print(f"El número es el {num :,}")
+>>>El número es el 5,000,000,000
+
+num = 5000000000
+print(f"El número es el {num :_}")
+>>>El número es el 5_000_000_000
+```
+
+#### .precision
+
+Es un punto seguido de un integer que indica la precisión máxima de la respuesta:
+
+```python
+num = 5.000000000
+print(f"El número es el {num :4}")
+>>>El número es el 5.0000
+```
+
+#### type
+
+Muestra dentro de cada tipo de dato básico, el tipo específico de dato que estamos utilizando.
+
+Como hay muchos y no son usados habitualmente, pueden verlos en el enlace a continuación.
+
+{% embed url="https://docs.python.org/3/library/string.html#formatspec" %}
+enlace a los operadores de formateo de strings
+{% endembed %}
 
 ## Saltos de línea y tabulaciones
 
