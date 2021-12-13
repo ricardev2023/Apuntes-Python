@@ -26,3 +26,7 @@
 * [Tema 13. Scripts y Módulos](curso-avanzado/tema-13.-scripts-y-modulos.md)
 * [Tema 14. Archivos TXT y CSV](curso-avanzado/tema-14.-archivos-txt-y-csv.md)
 * [Tema 15. Errores y Excepciones](curso-avanzado/tema-15.-errores-y-excepciones.md)
+
+## APLICACIONES PRÁCTICAS
+
+* [Socket. Modelo cliente-servidor](aplicaciones-practicas/socket.-modelo-cliente-servidor.md)

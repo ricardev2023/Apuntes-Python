@@ -5,7 +5,7 @@ description: Explicación de los conceptos básicos de Python 3.
 # Tema 1. Python Básico
 
 {% hint style="info" %}
-`En la página web de Python podemos encontrar tutoriales de uso.`
+En la página web de Python podemos encontrar tutoriales de uso.
 
 ****[**TUTORIAL OFICIAL DE PYTHON**](https://docs.python.org/es/3/tutorial/index.html)****
 {% endhint %}

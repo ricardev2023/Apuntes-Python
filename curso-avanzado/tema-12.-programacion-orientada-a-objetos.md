@@ -1276,7 +1276,7 @@ child.name
 
 De este modo, la lógica del `.__init__()` solo se especifica una vez, haciendo mucho más sencillo el modificarlo en un futuro desde la clase padre. Del mismo modo, también será más sencillo crear subclases diferentes de la clase `Person`. Además, también es posible crear subclases de la ya subclase `Children`, como por ejemplo `Teenager` dependiendo del rango de edad dentro del intervalo \[0, 18).
 
-![single inheritance](<../.gitbook/assets/image (3).png>)
+![single inheritance](<../.gitbook/assets/image (3) (1).png>)
 
 Así como hemos heredado de la clase que hemos creado, `Person`, podemos heredar de una clase ya existente en `Python`, como por ejemplo la clase `int`
 
