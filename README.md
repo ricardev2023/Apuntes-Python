@@ -19,5 +19,5 @@ En los enlaces de la izquierda podrán encontrar:
 * Los apuntes de **Blue Team** con la parte de gestión de servidores Linux de la **certificación LPIC-1**.
 * El enlace a mi github donde podrán encontrar todos mis proyectos.
 
-_strelock_\
-_ajcruz15@protonmail.com (No duden en enviar propuestas y correcciones)_
+Ricardev\
+contacto@ricar.dev _(No duden en enviar propuestas y correcciones)_

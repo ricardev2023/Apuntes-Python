@@ -4,7 +4,7 @@
 * [Apuntes Linux](https://ajcruz15.gitbook.io/apuntes-linux/)
 * [Apuntes Red Team](https://ajcruz15.gitbook.io/red-team/)
 * [Apuntes Blue Team](https://ajcruz15.gitbook.io/blue-team/)
-* [strelock15 github](https://github.com/strelock15)
+* [ Ricardev github](https://github.com/ricardev2023)
 
 ## CURSO BÁSICO
 
